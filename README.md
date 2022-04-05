@@ -8,3 +8,4 @@ object MyProperty {
     const val mySocketUrl = "webSocketUrl"
 }
 ```
+需要下载demo apk的朋友可以看看右侧release的demo apk即本次项目的apk，提供两个测试ID方便测试
