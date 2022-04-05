@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chatIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cartoon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatTime"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chatName"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:gravity="center|left"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="Dream4.0"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chatIcon"
+        app:layout_constraintTop_toBottomOf="@+id/chatTime"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_default="spread"
+        tools:ignore="RtlHardcoded" />
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center|start"
+        android:paddingStart="5dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/chatIcon"
+        app:layout_constraintTop_toBottomOf="@+id/chatName"
+        app:layout_constraintWidth_default="spread"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:cardCornerRadius="4dp"
+            app:elevation="5dp">
+            <TextView
+                android:padding="2dp"
+                android:id="@+id/chatText"
+                android:text="小姐姐"
+                android:background="@color/fund_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chatTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:text="2020-04-04 16:30:33.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
